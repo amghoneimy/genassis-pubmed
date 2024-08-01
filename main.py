@@ -161,8 +161,8 @@ def research(query: QueryModel):
 
 # Expose the server using pyngrok
 ngrok.set_auth_token("2jw4tDpGE8Ke8uaeglYXhtmQPfk_2n357gKGjBBpwZB61dy9V")
-public_url = ngrok.connect(8080)
+public_url = ngrok.connect(8000)
 print(f"Public URL: {public_url}")
 
 # Run the Uvicorn server
-uvicorn.run(app, host="0.0.0.0", port=8080)
+uvicorn.run(app, host="0.0.0.0", port=8000)
